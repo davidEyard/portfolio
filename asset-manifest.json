@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/dycr8s-site/static/css/main.85302255.css",
+    "main.js": "/dycr8s-site/static/js/main.dcefe4b3.js",
+    "static/media/BioHazard.mp3": "/dycr8s-site/static/media/BioHazard.cfd2ba4728e368bdddeb.mp3",
+    "static/media/tree_speakers.jpg": "/dycr8s-site/static/media/tree_speakers.1389aa2f59f540cf0cc5.jpg",
+    "static/media/cham_logo.png": "/dycr8s-site/static/media/cham_logo.cccc15ade84ebdca960f.png",
+    "index.html": "/dycr8s-site/index.html",
+    "main.85302255.css.map": "/dycr8s-site/static/css/main.85302255.css.map",
+    "main.dcefe4b3.js.map": "/dycr8s-site/static/js/main.dcefe4b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.85302255.css",
+    "static/js/main.dcefe4b3.js"
+  ]
+}
