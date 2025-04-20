@@ -1,0 +1,63 @@
+/* portfolio.css */
+
+.portfolio-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9); /* Static dark overlay background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.portfolio-content {
+    max-width: 800px;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.85); /* Keeps background static */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 238, 255, 0.3);
+}
+
+/* Project Card Styling */
+.project-scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.project-card {
+    padding: 1.5rem;
+    background-color: #1a1a2e; /* Static color */
+    color: #d4d4dc; /* Light text for readability */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 238, 255, 0.2);
+    transition: box-shadow 0.3s ease; /* Optional hover effect */
+}
+
+.project-card h3 {
+    color: #ff007f;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #aaa;
+}
+
+.project-card a {
+    color: #0ef;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.project-card a:hover {
+    color: #ff007f;
+}

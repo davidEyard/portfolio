@@ -1,0 +1,377 @@
+/* Global Styles */
+body, html {
+  min-height: 100vh; /* Ensures full viewport height */
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #000;
+  background-image: url('../assets/tree_speakers.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Container to hold main content and footer */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content container */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem; /* Space between sections */
+  padding: 1rem 2rem;
+}
+
+/* Spacer div to push footer down */
+.spacer {
+  flex-grow: 20em;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Arrange content vertically */
+  align-items: center; /* Center content horizontally */
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Social links styling */
+.social-links {
+  display: flex;
+  gap: 1.5rem; /* Space between social links */
+}
+
+/* Footer copyright text */
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+/* Section styles */
+.section {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(135deg, #1a1a2e, #3a0ca3, #7209b7, #560bad, #1a1a2e);
+  color: #d4d4dc;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, #ff007f, #0ef) 1;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.3);
+  margin: 1rem auto;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+/* Expanded view on click */
+.section.expanded {
+  width: 80vw;
+  height: 70vh;
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.6), 0 0 35px rgba(255, 0, 127, 0.4);
+  font-size: 1.2rem;
+}
+
+/* Spacer to push footer down */
+.spacer {
+  flex: 1; /* Fills available space */
+}
+
+/* Header Title */
+.header h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Main logo in header */
+.logo {
+  margin-left: 0.5em; /* Space between title and logo */
+  width: clamp(20px, 4vw, 50px); /* Responsive size for the logo */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures logo visibility */
+}
+
+.main-title {
+    white-space: nowrap; /* Keeps "David Yard | Creates:" on one line */
+    margin-right: 2em;
+    align-items: center;
+}
+
+.second-line {
+    display: flex;
+    align-items: center;
+    flex-basis: 100%; /* Forces to a new line when wrapping */
+    
+    text-align: right;
+    margin-top: 0.2em; /* Adds space between lines */
+    white-space: nowrap; /* Keeps "Sound & Code" on one line */
+    
+}
+
+.small-logo {
+    display: none; /* Hide by default */
+    margin-right: 2em;
+    margin-left: 12px;
+    width: 30px; /* Smaller logo size */
+    height: auto;
+}
+
+/* Media Query for Logo Adjustment */
+@media (max-width: 768px) {
+    .logo {
+        display: inline; /* shows main logo */
+    }
+    .small-logo {
+        display: inline; /* Show small logo next to "Sound & Code" */
+    }
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.nav-links a {
+  margin: 0 0.5rem;
+  color: #ff007f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #7209b7;
+}
+
+/* Footer Styling */
+.footer {
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-links a {
+  margin: 0 1.5rem;
+  color: #ff007f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #7209b7;
+}
+
+
+
+/* Section styles */
+.section {
+  width: 150px; /* Small square size initially */
+  height: 150px;
+  background: linear-gradient(135deg, #1a1a2e, #3a0ca3, #7209b7, #560bad, #1a1a2e);
+  color: #d4d4dc;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg, #ff007f, #0ef) 1;
+  box-shadow: 0 0 10px rgba(0, 238, 255, 0.3);
+  margin: 1rem auto;
+  transition: all 0.4s ease; /* Smooth transition for resizing */
+  cursor: pointer;
+}
+
+/* Expanded view on click */
+.section.expanded {
+  width: 80vw; /* Expands to larger width */
+  height: 70vh; /* Expands to larger height */
+  overflow: auto; /* Enables scrolling if content overflows */
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.6), 0 0 35px rgba(255, 0, 127, 0.4);
+  font-size: 1.2rem;
+  padding: 1.5rem; /* Adds padding inside expanded view */
+}
+
+/* Active Section */
+.section.active {
+  box-shadow: 0 0 25px rgba(0, 238, 255, 0.6), 0 0 35px rgba(255, 0, 127, 0.4);
+  border-width: 15px;
+  background: linear-gradient(135deg, #1a1a2e, #7209b7, #00ff1a, #3a0ca3, #1a1a2e);
+}
+
+.section-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff007f;
+  box-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.section.active .section-indicator {
+  opacity: 1;
+}
+
+/* Unique Gradients for Each Section */
+#music {
+  background: linear-gradient(135deg, #0d0d1d, #3a0ca3, #a00dad, #2b2b48, #0d0d1d);
+  animation: gradient-animation 14s ease infinite;
+}
+
+#business {
+  background: linear-gradient(135deg, #1a1a2e, #560bad, #2c9cdc, #3b0f68, #1a1a2e);
+  animation: gradient-animation 16s ease infinite;
+}
+
+#projects {
+  background: linear-gradient(135deg, #1a1a2e, #3b0f68, #86019d, #4b0d5b, #1a1a2e);
+  animation: gradient-animation 18s ease infinite;
+}
+
+#about {
+  background: linear-gradient(135deg, #1a1a2e, #8c0b93, #6f00ff, #3b0f68, #1a1a2e);
+  animation: gradient-animation 20s ease infinite;
+}
+
+/* Neon Glow Animations */
+.section h2 {
+  color: #ff007f;
+  text-shadow: 0 0 8px #ff007f, 0 0 16px #ff007f, 0 0 24px #ff007f;
+  font-size: 2.5rem;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.section h2:hover {
+  color: #7209b7;
+  text-shadow: 0 0 10px #7209b7, 0 0 20px #7209b7, 0 0 30px #7209b7;
+}
+
+.section p {
+  color: #ccc;
+  text-shadow: 0 0 3px #888;
+}
+
+/* Close Button */
+.close-button {
+ 
+  color: #ff007f; /* Text color */
+  border: 1px solid #ff007f; /* Border around the box */
+  border-radius: 4px; /* Slightly rounded corners */
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 0.2rem 0.5rem; /* Padding for spacing inside the box */
+  transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.close-button:hover {
+  color: #7209b7;
+
+  border-color: #7209b7; /* Border changes color on hover */
+}
+
+/* Keyframes for Gradient Animation */
+@keyframes gradient-animation {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header h1 {
+      font-size: 5vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 6vw;
+  }
+  .nav-links {
+      justify-content: center;
+  }
+
+  .nav-links a {
+      font-size: 0.9rem;
+      margin: 0 0.5rem;
+  }
+}
+
+body {
+  background: radial-gradient(circle, #1a1a2e, #000000, #00002f);
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: #d4d4dc;
+  background-image: url('../assets/tree_speakers.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+.react_logo {
+  width: 28px;
+  height: auto;
+  opacity: 0.5;
+  vertical-align: middle;
+  margin-left: 5px;
+}

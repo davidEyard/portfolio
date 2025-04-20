@@ -1,0 +1,89 @@
+/* business.css */
+
+.section {
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* Expanded section style */
+.section.expanded {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #0a0a2e, #1f1f5a, #333377);
+    color: #fff;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+/* Business Heading Style */
+.business-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff007f; /* Bright neon color to stand out */
+    text-shadow: 0 0 10px #ff007f, 0 0 20px #7209b7;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.business-content h2:hover {
+    color: #7209b7;
+    text-shadow: 0 0 15px #7209b7, 0 0 25px #ff007f;
+}
+
+/* Skills List Styling */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2rem;
+    color: #d4d4dc;
+    margin-top: 1rem;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+    position: relative;
+}
+
+/* Icon or Dot for Each Skill Item */
+.skills-list li::before {
+    content: "•"; /* Add a bullet symbol */
+    color: #ff007f;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Add Hover Effect for Skill Items */
+.skills-list li:hover {
+    color: #ff007f;
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+/* business.css */
+
+.portfolio-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ff007f;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ff007f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-link:hover {
+    background-color: #ff007f;
+    color: #fff;
+}

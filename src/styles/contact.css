@@ -1,0 +1,57 @@
+/* contact.css */
+
+.contact-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Background overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
+}
+
+.contact-content {
+    background: #1a1a2e;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 90%;
+    color: #d4d4dc;
+    text-align: center;
+    position: relative;
+}
+
+.contact-content a {
+    color: #ff007f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-content a:hover {
+    color: #7209b7;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    color: #ff007f;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #7209b7;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
