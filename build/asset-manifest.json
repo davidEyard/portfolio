@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.06b1c421.css",
+    "main.js": "/portfolio/static/js/main.a1bcdd8e.js",
+    "static/media/BioHazard.mp3": "/portfolio/static/media/BioHazard.cfd2ba4728e368bdddeb.mp3",
+    "static/media/tree_speakers.jpg": "/portfolio/static/media/tree_speakers.1389aa2f59f540cf0cc5.jpg",
+    "static/media/cham_logo.png": "/portfolio/static/media/cham_logo.cccc15ade84ebdca960f.png",
+    "index.html": "/portfolio/index.html",
+    "main.06b1c421.css.map": "/portfolio/static/css/main.06b1c421.css.map",
+    "main.a1bcdd8e.js.map": "/portfolio/static/js/main.a1bcdd8e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06b1c421.css",
+    "static/js/main.a1bcdd8e.js"
+  ]
+}
