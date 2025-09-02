@@ -71,8 +71,8 @@ function App() {
             <footer className="footer">
                 <p>© 2024 DY Cr8s | <img src={react_logo} alt="React Logo" className="react_logo" /></p>
                 <div className="social-links">
-                    <a href="https://www.linkedin.com/in/davideyard/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.linkedin.com/in/davideyard/" target="https://www.linkedin.com/in/davideyard/" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/davidEyard" target="https://github.com/davidEyard" rel="noopener noreferrer">GitHub</a>
                     <a href="#contact" onClick={(e) => { e.preventDefault(); handleOpenContact(); }}>Contact</a>
                 </div>
             </footer>
